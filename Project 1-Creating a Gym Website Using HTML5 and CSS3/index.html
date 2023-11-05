@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Own Your Fitness Elevate Your Life</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+    <style>
+        body {
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url("images/img3.jpg");
+            background-repeat: no-repeat;
+            font-family: 'Playball', cursive;
+        }
+
+        .hd {
+            /* border: 2px solid white; */
+        }
+        .navi{
+            /* position: fixed; */
+        }
+        .left {
+            /* border: 2px solid blue; */
+            display: inline-block;
+            position: absolute;
+            left: 40px;
+            top: 15px;
+            /* cursor: pointer; */
+        }
+
+        .left img {
+            width: 70px;
+            filter: invert(0%);
+        }
+
+        .left div {
+            text-align: center;
+            line-height: 4px;
+            font-size: 18px;
+        }
+
+        .mid {
+            /* border: 2px solid red; */
+            display: block;
+            width: 50%;
+            margin: 20px auto;
+            /* position: relative;
+            bottom: 20px; */
+        }
+
+        .right {
+            /* border: 2px solid yellow; */
+            display: inline-block;
+            /* width: 150px; */
+            position: absolute;
+            right: 20px;
+            top: 30px;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 34px 50px;
+            font-size: 25px;
+        }
+
+        .navbar li a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+        .btn {
+            margin: 0px 5px;
+            padding: 4px 15px;
+            color: white;
+            background-color: black;
+            border: 2px solid red;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+            font-family: 'Playball', cursive;
+        }
+
+        .btn:hover {
+            color: rgb(22, 238, 7);
+            border: 2px solid blue;
+            background-color: rgb(240, 156, 47);
+        }
+
+        .container {
+            /* border: 2px solid white; */
+            margin: 100px 40px;
+            padding: 50px 40px;
+            width: 30%;
+            border-radius: 10px;
+        }
+
+        .form-group input {
+            text-align: center;
+            display: block;
+            border: 2px solid yellow;
+            margin: 15px auto;
+            padding: 5px 5px;
+            width: 75%;
+            font-size: 25px;
+            border-radius: 10px;
+            font-family: 'Playball', cursive;
+        }
+
+        .container h2 {
+            margin: 30px;
+            text-align: center;
+        }
+
+        .container button {
+            display: block;
+            width: 35%;
+            margin: 20px auto;
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="hd">
+        <nav class="navi">
+            <!-- left for logo -->
+            <div class="left">
+                <img src="images/img2.png" alt="">
+                <div>Fitness Club</div>
+            </div>
+            <!-- mid for navigation -->
+            <div class="mid">
+                <ul class="navbar">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Guide</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <!-- right for buttons and others -->
+            <div class="right">
+                <button class="btn">Chat</button>
+                <button class="btn">Mail</button>
+            </div>
+        </nav>
+
+    </header>
+    <div class="container">
+        <h2>Own Your Fitness Elevate Your Life</h2>
+        <form action="subham.php">
+            <div class="form-group">
+                <input type="text" name="" id="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" id="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" id="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" id="" placeholder="Enter your Weight">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" id="" placeholder="Enter your Contact">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" id="" placeholder="Enter your Email ID">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

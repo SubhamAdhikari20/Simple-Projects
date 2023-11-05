@@ -1,0 +1,268 @@
+/* CSS Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 20px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root {
+    --navbar-height: 23px;
+}
+
+
+/* Navigation Bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#navbar::before {
+    content: "";
+    background-color: darkgreen;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .6;
+}
+
+/* Navigation Bar-Logo and Images */
+#logo {
+    margin: 5px 15px;
+}
+
+#logo img {
+    margin: 5px 10px;
+    width: 65px;
+}
+
+/* Navigation Bar-List Item Styling */
+#navbar ul {
+    display: flex;
+}
+
+
+#navbar ul li {
+    list-style: none;
+}
+
+#navbar ul li a {
+    display: block;
+    font-size: 1.3rem;
+    padding: 2px 20px;
+    text-decoration: none;
+    color: white;
+}
+
+#navbar ul li a:hover {
+    border-radius: 40px;
+    color: blue;
+    background-color: aqua;
+
+}
+
+/* Home Section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 313px;
+    
+}
+
+#home::before {
+    content: "";
+    background: url("../img/bgs/bg3.jpg") no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 65%;
+    width: 100%;
+    z-index: -1;
+    opacity: .86;
+
+}
+
+#home h1 {
+    /* font-size: 2.3rem; */
+    /* padding: 10px; */
+    color: rgb(241, 211, 12);
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: 'Playball', cursive;
+}
+
+
+/* Services Section */
+#services-container h1{
+    color: rgb(115, 160, 237);
+}
+#services {
+    display: flex;
+    margin: 20px;
+}
+
+#services .box {
+    border: 3px solid blue;
+    border-radius: 20px;
+    background-color: #bebee9;;
+    padding: 30px;
+    margin: 25px 20px;
+    margin-bottom: 20px;
+}
+
+#services .box h2{
+    cursor: pointer;
+}
+#services .box img{
+    cursor: pointer;
+}
+
+
+#services .box img {
+    /* border: 3px solid red; */
+    height: 150px;
+    width: 150px;
+    display: block;
+    margin: auto;
+}
+#services .box p{
+    font-family: 'Playball', cursive;
+}
+
+
+/* Client Sections */
+#client-section{
+    position: relative;
+}
+
+#client-section::before{
+    content: "";
+    background: url("../img/bgs/bg6.jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .75; 
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding: 10px;
+    padding-bottom: 40px;
+}
+.client-item img{
+    height: 100px;
+}
+
+
+/* Contact Section */
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url("../img/contacts/contact2.jpg") no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: .8;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+#contact-box input, #contact textarea{
+    width: 100%;
+    padding: .3rem;
+    font-size: 1.2rem;
+    font-family: 'Playball', cursive;
+    border: 2px solid rgb(26, 136, 227);
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+#contact-box form{
+    width: 35%;
+}
+
+#contact-box label{
+    font-size: 1.4rem;
+    font-family: 'Indie Flower', cursive;
+}
+
+
+/* Footer */
+footer{
+    padding: 15px 5px;
+    background-color: brown;
+    color: white;
+}
+
+
+
+
+
+/* Utility Classes */
+.h-primary {
+    font-size: 2.3rem;
+    padding: 20px;
+    font-family: 'Indie Flower', cursive;
+}
+
+.h-secondary {
+    font-size: 1.8rem;
+    padding: 10px;
+    font-family: 'Pacifico', cursive;
+    
+}
+
+.center {
+    text-align: center;
+}
+
+.btn {
+    padding: 5px 15px;
+    margin: 15px 20px;
+    cursor: pointer;
+    border: 3px solid blueviolet;
+    border-radius: 10px;
+    font-family: 'Pacifico', cursive;
+    transition: all 2s ease .3s; 
+}
+
+.btn:hover {
+    background-color: lightgreen;
+    color: rgb(33, 89, 231);
+}
